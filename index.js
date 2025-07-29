@@ -10,7 +10,12 @@ require('./config/passport');
 const app = express();
 
 // --- Middleware ---
-app.use(cors());
+// ✅ Allow only your frontend domain for CORS
+app.use(cors({
+  origin: 'https://docu-mind-sigma.vercel.app',
+  credentials: true, // ✅ For sending cookies or tokens
+}));
+
 app.use(express.json());
 app.use(passport.initialize()); // 🔐 For Google OAuth
 
