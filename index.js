@@ -12,7 +12,7 @@ const app = express();
 // --- Middleware ---
 // ✅ Allow only your frontend domain for CORS
 app.use(cors({
-  origin: 'https://docu-mind-sigma.vercel.app',
+  origin: 'https://docu-mind-6dvc.vercel.app',
   credentials: true, // ✅ For sending cookies or tokens
 }));
 
