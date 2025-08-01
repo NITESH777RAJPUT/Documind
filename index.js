@@ -14,9 +14,10 @@ const app = express();
 // --- Middleware ---
 // Configure CORS to allow requests from specific frontend origins
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://docu-mind-wb79.vercel.app'], // Allowed frontend URLs
+  origin: ['http://localhost:5173', 'https://docu-mind-sigma.vercel.app'], // Allowed frontend URLs
   credentials: true, // Enable sending cookies/authentication headers
 }));
+app.options('*', cors()); // ✅ Allow preflight (OPTIONS) requests for all routes
 
 // Parse JSON request bodies
 app.use(express.json());
