@@ -23,7 +23,7 @@ router.get(
     });
 
     // ✅ Redirect with token (or send token via response if preferred)
-    res.redirect(`https://docu-mind-sigma.vercel.app/chat?token=${token}`);
+    res.redirect(`https://docu-mind-wb79.vercel.app/chat?token=${token}`);
   }
 );
 
