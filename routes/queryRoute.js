@@ -14,6 +14,7 @@ router.post('/file-query', requireAuth, upload.single('file'), handleFileQuery);
 router.get('/summarize', summarizeDocument);
 
 // ✅ NEW: Get all saved files by user ID
-router.get('/files/:userId', getUserFiles);
+router.get('/files/:userId', getUserFiles); // ✅ this is correct
+
 
 module.exports = router;
