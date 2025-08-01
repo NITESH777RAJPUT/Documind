@@ -23,7 +23,7 @@ router.get(
     });
 
     // ✅ Redirect with token (or send token via response if preferred)
-    res.redirect(`https://docu-mind-6dvc.vercel.app/chat?token=${token}`);
+    res.redirect(`http://localhost:5173/chat?token=${token}`);
   }
 );
 
